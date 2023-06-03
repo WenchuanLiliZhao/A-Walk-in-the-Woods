@@ -26,7 +26,7 @@ The choice of primitive notions in Hilbert's investigation is quite similar to E
 
 In a theory, an **axiom** is a proposition on primitive notions. It is believed to be true, but is unprovable by any other axioms.
 
-Most of the axioms are obvious. But, as they are unprovable within the theory, we can never say that they are definitely true -- we just believe in them, nothing more. The only way to verify the consistency of an axiom is to disprove it by discovering a paradox derived from it.
+Axioms were undoubtedly discovered through intuition regarding primitive notions. That is why most of the axioms are obvious. But, no matter how obvious it is, as they are unprovable within the theory, we can never say that they are definitely true -- we just believe in them, nothing more. The only way to verify the consistency of an axiom is to disprove it by discovering a paradox derived from it.
 
 For example, the irrationality of $\sqrt{2}$ is proven by assuming that it is rational, which was the only type of number that the Pythagoreans believed in.
 
