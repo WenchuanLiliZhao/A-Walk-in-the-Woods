@@ -1,7 +1,5 @@
 # Introduction
 
-## Primitive notions
-
 A theory is essentially a rational discussion on a set of undefined concepts known as **primitive notions** or **primitive concepts**, which serve as the initial hypotheses of the theory. Philosophical, legal, and mathematical theories are examples of such discussions. This article focuses specifically on mathematical theories.
 
 In a theory, a term is a primitive notion only if it cannot be defined in the terms of any other primitive notions.
@@ -25,8 +23,6 @@ In *Elements*, the term, "part", is unexplained and "has no part" is only a suff
 David Hilbert, in his 1899 work *Grundlagen der Geometrie* ([the Foundation of Geometry](https://math.berkeley.edu/~wodzicki/160/Hilbert.pdf)), includes points and lines (referring to straight lines) in the set of primitive notions within Euclidean geometry.
 
 The choice of primitive notions in Hilbert's investigation is quite similar to Euclid's definitions in a sense. Moritz Pasch, however, provided a different choice of primitive notions, in which the concept of lines is not primitive, but that of **segments** is. In this case, lines are defined in the terms of segments. As both of the choices can explain the consistency of geometry, the choice of primitive notions is not unique.
-
-## Axioms
 
 In a theory, an **axiom** is a proposition on primitive notions. It is believed to be true, but is unprovable by any other axioms.
 
