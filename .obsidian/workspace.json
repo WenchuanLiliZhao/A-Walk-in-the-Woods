@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f046b20c643c283f",
+        "id": "c1ed35930b3ae805",
         "type": "tabs",
         "children": [
           {
-            "id": "8871ab579fb70615",
+            "id": "2209d619aebb86fa",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,26 +18,21 @@
                 "source": false
               }
             }
-          }
-        ]
-      },
-      {
-        "id": "c1ed35930b3ae805",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "638fa5f5b85f22d4",
+            "id": "fb3fe6b386cdb656",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/set-theory/basic-comcepts-in-set-theory.md",
+                "file": "content/introduction.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -103,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_sidebar.md",
+                "file": "content/introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_sidebar.md",
+                "file": "content/introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_sidebar.md"
+                "file": "content/introduction.md"
               }
             }
           }
@@ -164,16 +159,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "048a647fd40054fd",
+  "active": "fb3fe6b386cdb656",
   "lastOpenFiles": [
-    "content/set-theory",
     "content/set-theory/basic-comcepts-in-set-theory.md",
     "_sidebar.md",
-    "content/Untitled.md",
-    "content/introduction.md",
+    "_sidebarUnpublished.md",
     "_coverpage.md",
-    "content",
+    "content/introduction.md",
     "README.md",
+    "content/set-theory",
+    "content/Untitled.md",
+    "content",
     "content"
   ]
 }
