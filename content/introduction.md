@@ -4,11 +4,7 @@
 
 A theory is essentially a rational discussion on a set of undefined concepts known as **primitive notions** or **primitive concepts**, which serve as the initial hypotheses of the theory. Philosophical, legal, and mathematical theories are examples of such discussions. This article focuses specifically on mathematical theories.
 
-In a theory, a term is a primitive notion only if it cannot be defined in the terms of any other primitive notions. That is, if terms $a$, $b$, $c$, ... are primitive notions in a theory, for any term $z$ in this set and for any theoretical object $u$
-$$
-\neg (z(u) \iff P_a(a) \lor P_b (b) \lor P_c(c) \lor \cdots ),
-$$
-where $z(u)$ means "$u$ is $z$", and $P(a)$, $Q(b)$, $R(c)$, ... are conditions on $a$, $b$, $c$, ... within the context of the theory.
+In a theory, a term is a primitive notion only if it cannot be defined in the terms of any other primitive notions.
 
 For example, in Zermelo-Fraenkel set theory with the axiom of choice (ZFC), **sets** and "**belongs to**" are typical primitive notions. Intuitively, sets are collections of objects, but we do not know what exactly kind of collections they are. Indeed, we have several propositions, axioms, on sets which are believed to be true, and each of them is either a necessary or sufficient condition of "being a set", but none of them is both. "Belongs to" or "is an element of", on the other hand, is a relation between sets, in which sets cannot be defined, and vise versa.
 
