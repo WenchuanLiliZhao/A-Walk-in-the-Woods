@@ -8,7 +8,7 @@ In a theory, a term is a primitive notion only if it cannot be defined in the te
 
 For example, in Zermelo-Fraenkel set theory with the axiom of choice (ZFC), **sets** and "**belongs to**" are typical primitive notions. Intuitively, sets are collections of objects, but we do not know what exactly kind of collections they are. Indeed, we have several axioms on sets which are believed to be true, and each of them is either a necessary or sufficient condition of "being a set", but none of them is both necessary and sufficient. "Belongs to" or "is an element of", on the other hand, is a relation between sets, which cannot be defined solely in terms of sets, and vice versa.
 
-This is indeed a little unsettling that our theories are build upon such undefinable concepts. In this sense, a primitive notion is required to be as widely acceptable as possible. For example, limits in calculus is not an idea candidate to be a primitive notion, because it raises to many controversies until it is clearly defined in the terms of simpler concepts.
+This is indeed a little unsettling that our theories are build upon such undefinable concepts. In this sense, a primitive notion is required to be as widely acceptable as possible. For example, limits in calculus is not an idea candidate to be a primitive notion, because it raises controversies unless it is clearly defined in the terms of simpler concepts.
 
 Can we find a theory that only contains definitions, the concepts being unambiguously defined within the theory? The answer is no. No matter how big the theory is, we will inevitably encounter the situation of accepting primitive notions, if the theory is built with logic. Here is an intuitive explanation.
 
