@@ -1,3 +1,3 @@
-# Headline
+# Preface
 
-> An awesome project.
+This is a math book.
