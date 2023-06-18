@@ -1,1 +1,0 @@
-# The Inconsistency of Naïve Set Theory
