@@ -4,11 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "e3edced36663b169",
+        "id": "61bade285dd0d1b0",
         "type": "tabs",
+        "dimension": 26.03021978021978,
         "children": [
           {
-            "id": "cd6da7264726b42a",
+            "id": "80fa0d5511032068",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,28 +23,29 @@
         ]
       },
       {
-        "id": "18252675983389ae",
+        "id": "e0fec2ac107a6e26",
         "type": "tabs",
+        "dimension": 73.96978021978022,
         "children": [
           {
-            "id": "e6389fb6ea87e022",
+            "id": "c556367d82083fc1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Set Theory/Basic/Subsets.md",
+                "file": "Set Theory/From Naïve to Modern/From Naïve to Modern.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5bbefdcd84b575c2",
+            "id": "4a6042a491500f19",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Set Theory/Numbers/_intro.md",
+                "file": "Set Theory/From Naïve to Modern/Zermelo-Fraenkel Set Theory.md",
                 "mode": "source",
                 "source": false
               }
@@ -116,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Set Theory/Numbers/_intro.md",
+                "file": "Set Theory/From Naïve to Modern/Zermelo-Fraenkel Set Theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Set Theory/Numbers/_intro.md",
+                "file": "Set Theory/From Naïve to Modern/Zermelo-Fraenkel Set Theory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Set Theory/Numbers/_intro.md"
+                "file": "Set Theory/From Naïve to Modern/Zermelo-Fraenkel Set Theory.md"
               }
             }
           }
@@ -178,43 +180,48 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5bbefdcd84b575c2",
+  "active": "4a6042a491500f19",
   "lastOpenFiles": [
+    "Set Theory/From Naïve to Modern/From Naïve to Modern.md",
+    "Set Theory/From Naïve to Modern/Zermelo-Fraenkel Set Theory.md",
+    "Set Theory/From Naïve to Modern/Subsets.md",
     "_sidebar.md",
-    "Set Theory/Numbers/_intro.md",
-    "Set Theory/Basic/Subsets.md",
+    "Set Theory/From Naïve to Modern/Relations and Functions.md",
+    "Set Theory/From Naïve to Modern/Zermelo-Fraenkel Set Theory~.md",
+    "Set Theory/From Naïve to Modern/Subsets~.md",
+    "Set Theory/From Naïve to Modern/Primitive Notions and Axioms.md",
+    "Set Theory/From Naïve to Modern/Equivalence Relations and Quotient Sets.md",
+    "Set Theory/From Naïve to Modern/How Many Elements Are There.md",
+    "Set Theory/From Naïve to Modern/Functions.md",
+    "Set Theory/Ordinal Numbers/_Chapter Into.md",
+    "Set Theory/_Part Intro.md",
+    "Set Theory/Ordinal Numbers",
+    "Home.md",
+    "README.md",
+    "media/Subsets.jpg",
+    "media",
+    "Figures~.sketch",
+    "Figures.sketch",
+    "_sidebarUnpublished.md",
+    "_footer.md",
+    "_coverpage.md",
     "_404.md",
+    "Set Theory/_ ✏️ part intro.md",
+    "Set Theory/From Naïve to Modern/Orderings and Ordered Sets.md",
+    "Set Theory/Numbers/0 chapter intro.md",
+    "Pasted image 20230619183127.png",
+    "Pasted image 20230619183138.png",
+    "Media/Pasted image 20230619171715.png",
+    "Media",
     "my404.md.md",
     "_404.md.md",
-    "Set Theory/Basic/_intro.md",
     "Set Theory/Numbers",
-    "Set Theory/Basic/Zermelo-Fraenkel Set Theory.md",
     "Pasted image 20230619011000.png",
     "Set Theory/From Naïve to Modern/Zermelo-Fraenkel Set Theorye.md",
     "style.css",
-    "_footer.md",
     "plugin.js",
-    "README.md",
-    "_sidebarUnpublished.md",
-    "Set Theory/_intro.md",
-    "_coverpage.md",
-    "Set Theory/Basic",
+    "Set Theory/From Naïve to Modern",
     "Set Theory",
-    "Set Theory/Basic/Relations and Mappings.md",
-    "Set Theory/The Inconsistency of Naïve Set Theory.md",
-    "Set Theory/Basic/Primitive Notions and Axioms.md",
-    "1.1.3 Functions.md",
-    "1.1 Relations and Mappings.md",
-    "__ Relations and Mappings.md",
-    "1.1.5 Orderings and Ordered Sets.md",
-    "1.1.4 Equivalence Relation and Quotient Sets.md",
-    "5 Equivalence Relation and Quotient Sets|5 Equivalence Relation and Quotient Sets.md",
-    "1.1.1 Cartesian Products.md",
-    "1.1.2 Relations.md",
-    "content/1-Set-Theory/Relations and Functions",
-    "content/set theory/equivalence-relation-and-quotient-sets.md",
-    "content/1-Set-Theory",
-    "content",
-    "content"
+    "Set Theory/The Inconsistency of Naïve Set Theory.md"
   ]
 }

@@ -29,19 +29,21 @@
 
     // Invoked on each page load after new HTML has been appended to the DOM
     hook.doneEach(function () {
-      
-      
+
+      quoteClass();
+      markTheorem("Definition");
+      markTheorem("Lemma");
+      markTheorem("Theorem");
+      markTheorem("Corollary");
+      markTheorem("Example");
+
+      markFigure();
       // ...
     });
 
     // Invoked one time after rendering the initial page
     hook.ready(function () {
-      quoteClass()
-      markH5("Definition", "", "mark");
-      markH5("Lemma", "", "mark");
-      markH5("Theorem", "", "mark");
-      markH5("Corollary", "", "mark");
-      markH5("Example", "", "mark");
+      
       // ...
     });
   };
@@ -61,7 +63,7 @@ function quoteClass() {
 }
 
 
-function markH5(_input, _removeText, _mark) {
+function markTheorem(_input) {
   const set = document.querySelectorAll("#main h4 a span strong");
   var index = 0;
 
@@ -72,16 +74,22 @@ function markH5(_input, _removeText, _mark) {
       // Do something with the <h5> tag
       index += 1;
 
-      if (_removeText == "removeText") {
-        set[i].innerText = "";
-      }
-
-      if (_mark == "mark") {
-        set[i].innerText += " " + index + "";
-        set[i].parentElement.innerText += ".";
-      }
-
-      
+      set[i].innerHTML += " " + index + "";
+      set[i].parentElement.innerHTML += ".";
     }
+  }
+}
+
+function markFigure() {
+  const set = document.querySelectorAll("#main figure figcaption");
+  var index = 0
+
+  for (let i = 0; i < set.length; i++) {
+    const element = set[i];
+
+    index += 1;
+
+    set[i].innerHTML = "<strong>Figure " + index + ".</strong> " + set[i].innerText;
+    
   }
 }

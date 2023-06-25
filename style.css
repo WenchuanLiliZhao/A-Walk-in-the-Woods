@@ -1,14 +1,19 @@
 html .content #main {
   font-size: 16px;
   max-width: 800px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 html .content #main p {
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 html, body {
   font-family: 'Times New Roman', Times, serif;
+
+  letter-spacing: 0.02em;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   

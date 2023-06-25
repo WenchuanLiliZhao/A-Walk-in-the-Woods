@@ -1,9 +1,5 @@
 # Subsets
 
-
-
-
-
 #### **Definition** (subsets)
 
 Let $A$ and $B$ be two sets. $B$ is a **subset** of $A$, denoted by $B \subseteq A$, if and only if
@@ -17,15 +13,11 @@ $$
 
 ---
 
-If you ask GPT, there is a 99% chance that it tells you that the definition of subsets is derived from the axiom schema of specification. It is maybe because many people believed that. However, this derivation is not true, but a common misleading by the terminology, as the axiom is sometimes called the **axiom of subsets**.
+#### The Axiom Schema of Specification
 
-The axiom schema of specification does provide a way to create a new set $B$ from a given set $A$ with $B \subseteq A$. But, note that, in the definition of subsets, $B \subseteq A$ is assumed as a set in the first place. So, the qualifier before $B$ is $\forall$ but not $\exists$. If we rewrite the definition in formal language,
+If $P(x)$ is a predicate on sets, then, for any set $A$, there exists a set $B$ such that $B$ consists of all elements $x \in A$ satisfying $P(x)$. In formal language,
 $$
-\forall A \forall B (A \subseteq B \iff \forall x(x \in A \Rightarrow x \in B)).
-$$
-we would find that it is only an assertion omitting some condition in the definition of set equality (following the axiom of extension).
-$$
-\underbrace{x \in A \Leftrightarrow x \in B)}_{\text{def. set equality}} \implies \underbrace{x \in A \Rightarrow x \in B)}_{\text{def. subsets}}.
+\forall P(x) \forall A \exists B \forall x (x \in B \iff (x \in A \land P(x))).
 $$
 
 ---
@@ -78,5 +70,7 @@ If $\phi(x)$ defines a set, i.e., there is a set $\mathcal A = \{x: \phi(x)\}$, 
 $$
 \bigcup \mathcal A \text{ for } \bigcup_{A \in \mathcal A} A.
 $$
+
+
 
 ---
