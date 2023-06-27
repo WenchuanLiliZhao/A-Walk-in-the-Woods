@@ -1,4 +1,0 @@
-# From Naïve to Modern
-
-
-

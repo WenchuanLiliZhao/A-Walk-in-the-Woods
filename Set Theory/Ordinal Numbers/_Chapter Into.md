@@ -1,3 +1,0 @@
-# Ordinal Numbers
-
-Coming soon
