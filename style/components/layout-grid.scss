@@ -1,0 +1,37 @@
+:root {
+  --side-bar-width: 280px;
+  --side-bar-z-index: 1000;
+}
+
+// 布局
+
+& {
+
+  > .sidebar-toggle {
+    position: fixed;
+    z-index: calc(var(--side-bar-z-index) + 1);
+  }
+
+  > .sidebar {
+    position: fixed;
+    z-index: var(--side-bar-z-index);
+    width: var(--side-bar-width);
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+
+  > .content {
+    margin-left: var(--side-bar-width);
+
+    > .markdown-section {
+      width: 880px;
+      margin: 0 auto;
+      margin-top: 80px;
+      padding: 0 40px;
+    }
+  }
+}
+
+// 风格
+

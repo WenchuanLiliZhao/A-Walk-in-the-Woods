@@ -1,1 +1,0 @@
-# The Foundation of Analysis

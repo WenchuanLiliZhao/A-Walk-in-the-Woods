@@ -1,0 +1,14 @@
+main {
+  --content-inner-padding: 16px;
+  
+  @import "./layout-grid.scss";
+  
+  #main {
+    
+    & > blockquote {
+      @import "./md.scss";
+    }
+  }
+}
+
+@import "./char-side-info.scss";

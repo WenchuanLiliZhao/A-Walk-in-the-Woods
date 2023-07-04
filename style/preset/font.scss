@@ -7,7 +7,8 @@
 
 html {
   // https://github.com/dreampulse/computer-modern-web-font
-  font-family: var(--font-family-serif);
+  // font-family: var(--font-family-sans);
+	font-family: var(--font-family-sans);
 
   // letter-spacing: 0.025em;
 
@@ -19,16 +20,24 @@ html {
 	text-decoration: none;
 }
 
-strong {
-	font-weight: bold;
-}
-
-em {
-	font-style: italic;
-}
-
 .katex {
-  font-size: 1.05em !important;
+  font-size: 1.08em !important;
+	line-height: inherit;
 	overflow-y: hidden;
 	vertical-align: baseline;
+
+	
+}
+
+.katex-display {
+	// text-align: left !important;
+	&>.katex {
+		text-align: left !important;
+		padding-left: 24px;
+	}
+}
+
+::selection {
+	background-color: var(--color-bg-1-trans);
+	color: var(--color-sig-pencil);
 }

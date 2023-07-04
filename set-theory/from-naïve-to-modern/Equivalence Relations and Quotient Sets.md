@@ -1,1 +1,0 @@
-# Equivalence Relations and Quotient Sets

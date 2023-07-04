@@ -69,63 +69,174 @@ img {
   vertical-align: middle; }
 
 :root {
+  --color-bg-0: black;
+  --color-bg-1-trans: rgba(255, 255, 255, 0.07);
+  --color-pencil-1: #E0E0E0;
+  --color-pencil-1-trans: rgba(225, 225, 225, 0.88);
+  --color-pencil-2: rgba(122, 122, 122, 1);
+  --color-pencil-2-trans: rgba(225, 225, 225, 0.48);
+  --color-sig-pencil: #F15C5C; }
+
+html, body {
+  background-color: var(--color-bg-0);
+  color: var(--color-pencil-1); }
+
+a {
+  color: inherit; }
+
+:root {
   --font-family-serif: "Times New Roman", Times, serif;
   --font-family-sans: Arial, Helvetica, sans-serif;
   --font-family-mono: "Menlo", 'Courier New', Courier, monospace; }
 
 html {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-family-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 * {
   text-decoration: none; }
 
-strong {
-  font-weight: bold; }
-
-em {
-  font-style: italic; }
-
 .katex {
-  font-size: 1.05em !important;
+  font-size: 1.08em !important;
+  line-height: inherit;
   overflow-y: hidden;
   vertical-align: baseline; }
 
-p, h5, li {
-  line-height: 24px; }
-  p:not(:first-of-type), h5:not(:first-of-type), li:not(:first-of-type) {
-    margin-top: 8px; }
+.katex-display > .katex {
+  text-align: left !important;
+  padding-left: 24px; }
 
-.dialogue-container {
-  display: grid;
-  grid-template-columns: 56px auto;
-  gap: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px; }
-  .dialogue-container:hover {
-    background-color: rgba(0, 0, 0, 0.04); }
-  .dialogue-container .who-container .avada {
-    width: 40px;
-    height: 40px;
-    margin-left: 16px;
-    margin-top: 4px;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    transition: 0.3s; }
-    .dialogue-container .who-container .avada:hover {
-      transform: rotate(3deg); }
-  .dialogue-container .who {
-    font-family: var(--font-family-sans); }
-    .dialogue-container .who .name {
-      font-weight: bold; }
-    .dialogue-container .who .index {
-      margin-left: 4px;
-      font-size: 12px;
-      color: rgba(0, 0, 0, 0.56); }
-      .dialogue-container .who .index::before {
-        content: "\#"; }
-  .dialogue-container.Antigone .avada {
-    background-image: url("https://i.pinimg.com/564x/52/d8/f0/52d8f0ebe48f61585735831b19b39b87.jpg"); }
-  .dialogue-container.Orpheus .avada {
-    background-image: url("https://i.pinimg.com/564x/b0/b8/6e/b0b86e811425bfcf8cd7844d208e21d9.jpg"); }
+::selection {
+  background-color: var(--color-bg-1-trans);
+  color: var(--color-sig-pencil); }
+
+main {
+  --content-inner-padding: 16px; }
+  main :root {
+    --side-bar-width: 280px;
+    --side-bar-z-index: 1000; }
+  main > .sidebar-toggle {
+    position: fixed;
+    z-index: calc(var(--side-bar-z-index) + 1); }
+  main > .sidebar {
+    position: fixed;
+    z-index: var(--side-bar-z-index);
+    width: var(--side-bar-width);
+    height: 100vh;
+    top: 0;
+    left: 0; }
+  main > .content {
+    margin-left: var(--side-bar-width); }
+    main > .content > .markdown-section {
+      width: 880px;
+      margin: 0 auto;
+      margin-top: 80px;
+      padding: 0 40px; }
+  main #main > blockquote {
+    padding: 16px;
+    position: relative;
+    display: grid;
+    gap: 8px;
+    border-radius: 8px;
+    transition: background-color 0.2s; }
+    main #main > blockquote:hover {
+      background-color: var(--color-bg-1-trans); }
+  main #main > blockquote h1 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: bold; }
+    main #main > blockquote h1::before {
+      content: "A Walk in the Woods";
+      display: block;
+      font-size: 18px;
+      line-height: 26px;
+      color: var(--color-pencil-2);
+      font-weight: normal; }
+  main #main > blockquote img {
+    max-width: 480px;
+    border-radius: 8px;
+    margin: 8px 0;
+    transition: 0.8s; }
+    main #main > blockquote img:hover {
+      max-width: 500px; }
+  main #main > blockquote h2 {
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: bold; }
+  main #main > blockquote h4 {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold; }
+    main #main > blockquote h4[id*="antigone"]::before, main #main > blockquote h4[id*="orpheus"]::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      left: 16px;
+      border-radius: 1000px;
+      border: 1px solid rgba(255, 255, 255, 0.16); }
+    main #main > blockquote h4[id*="antigone"], main #main > blockquote h4[id*="antigone"] ~ *, main #main > blockquote h4[id*="orpheus"], main #main > blockquote h4[id*="orpheus"] ~ * {
+      margin-left: 48px; }
+    main #main > blockquote h4[id*="antigone"]::before {
+      background-image: url("https://play-lh.googleusercontent.com/TYXuv6xbVKH6OKllw_y5DSbBHwd7k_ImIJHRaiYifJUJ5rqBgPtSQ-VrbS-Ao1wr9w=w240-h480-rw"); }
+    main #main > blockquote h4[id*="orpheus"]::before {
+      background-image: url("https://www.institutfrancais.com/sites/default/files/medias/images/phallaina_marietta-ren_smallbang.jpg"); }
+  main #main > blockquote h6 {
+    font-size: 16px;
+    line-height: 1.5; }
+  main #main > blockquote p, main #main > blockquote li {
+    font-size: 16px;
+    line-height: 1.5; }
+  main #main > blockquote em {
+    border-bottom: 1px dashed var(--color-pencil-2); }
+  main #main > blockquote strong {
+    color: var(--color-sig-pencil); }
+  main #main > blockquote > blockquote {
+    padding: 4px 0;
+    padding-left: 15px;
+    box-shadow: -1px 0 0 var(--color-pencil-2); }
+  main #main > blockquote u {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 4px 12px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 1000px; }
+  main #main > blockquote ul > li {
+    list-style: disc;
+    margin-left: 24px; }
+  main #main > blockquote ol > li {
+    list-style: decimal;
+    margin-left: 24px; }
+  main #main > blockquote p a, main #main > blockquote li a {
+    text-decoration: underline; }
+  main #main > blockquote hr {
+    display: none; }
+  main #main > blockquote hr ~ p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-pencil-2); }
+
+[id*="char-side-info-"] {
+  position: fixed;
+  width: 400px;
+  height: 100vh;
+  overflow-y: auto;
+  right: 0;
+  top: 0;
+  padding: 64px 24px;
+  background-color: var(--color-bg-0);
+  box-shadow: -1px 0 0 rgba(255, 255, 255, 0.16); }
+  [id*="char-side-info-"] .avata {
+    width: 120px;
+    height: 120px; }
+  [id*="char-side-info-"] .char-name {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 24px; }
+  [id*="char-side-info-"] p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 8px; }

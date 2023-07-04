@@ -1,0 +1,26 @@
+// Color
+:root {
+	--color-bg-0: black;
+	--color-bg-1-trans: rgba(255, 255, 255, 0.07);
+
+	--color-pencil-1: #E0E0E0;
+	--color-pencil-1-trans: rgba(225, 225, 225, 0.88);
+	--color-pencil-2: rgba(122, 122, 122, 1);
+	--color-pencil-2-trans: rgba(225, 225, 225, 0.48);
+
+	--color-sig-pencil: #F15C5C;
+	
+}
+
+html, body {
+	background-color: var(--color-bg-0);
+	color: var(--color-pencil-1);
+}
+
+a {
+	color: inherit;
+}
+
+[data-theme="dark"] {
+
+}

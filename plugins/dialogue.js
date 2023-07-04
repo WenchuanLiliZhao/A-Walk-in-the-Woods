@@ -1,42 +1,30 @@
 (function () {
   var myPlugin = function (hook, vm) {
-    // Invoked one time when docsify script is initialized
-    hook.init(function () {
-      
-      // ...
-    });
-
-    // Invoked one time when the docsify instance has mounted on the DOM
-    hook.mounted(function () {
-      
-      // ...
-    });
-
-    // Invoked on each page load before new markdown is transformed to HTML.
-    // Supports asynchronous tasks (see beforeEach documentation for details).
-    hook.beforeEach(function (markdown) {
-      // ...
-      return markdown;
-    });
-
-    // Invoked on each page load after new markdown has been transformed to HTML.
-    // Supports asynchronous tasks (see afterEach documentation for details).
-    hook.afterEach(function (html) {
-      // ...
-      return html;
-    });
-
-    // Invoked on each page load after new HTML has been appended to the DOM
+    
     hook.doneEach(function () {
-      console.log("dialogue loaded.")
+      console.log("page loaded.")
 
-      dialogue(["Orpheus", "Antigone", "Hermes"])
-      // ...
-    });
+      const peopleList = [
+        {
+          name: "Antigone",
+          key: "A",
+          avataLink: "https://play-lh.googleusercontent.com/TYXuv6xbVKH6OKllw_y5DSbBHwd7k_ImIJHRaiYifJUJ5rqBgPtSQ-VrbS-Ao1wr9w=w240-h480-rw",
+        },
 
-    // Invoked one time after rendering the initial page
-    hook.ready(function () {
-      
+        {
+          name: "Orpheus",
+          key: "O",
+          avataLink: "https://www.institutfrancais.com/sites/default/files/medias/images/phallaina_marietta-ren_smallbang.jpg",
+        },
+      ]
+
+      removeHeadingLink("h1");
+      removeHeadingLink("h2");
+      removeHeadingLink("h3");
+      removeHeadingLink("h4");
+      removeHeadingLink("h5");
+      removeHeadingLink("h6");
+
       // ...
     });
   };
@@ -47,62 +35,18 @@
 })();
 
 
-function dialogue_addClass(who) {
-  
-  const level1 = document.querySelectorAll("#main > blockquote");
+function removeHeadingLink(heading) {
+  const array = document.querySelectorAll(`#main ${heading}`);
 
-  for (let i = 0; i < level1.length; i++) {
-
-    const element = level1[i];
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
     
+    const text = element.querySelectorAll("& > a")[0].innerText;
 
-    const level2 = element.querySelectorAll("h5")[0];
-    const level3 = level2.querySelectorAll("a")[0];
-    const level4 = level3.querySelectorAll("span")[0];
-
-    if (level4.innerHTML == who) {
-      level2.classList.add("who")
-      level2.innerHTML = `<span class="name">` + level4.innerHTML + `</span>` + `<span class="index"></span>`;
-    
-
-      var container = document.createElement("div");
-      container.classList.add("dialogue-container");
-      element.parentNode.insertBefore(container, element);
-      container.appendChild(element);
-
-      var whoContainer = document.createElement("div");
-      whoContainer.classList.add("who-container");
-      element.parentNode.insertBefore(whoContainer, element);
-
-      var avada = document.createElement("div");
-      avada.classList.add("avada");
-      whoContainer.appendChild(avada);
-
-      container.classList.add(who);
-    }
+    element.innerText = text;
   }
 }
 
-function dialogue(chars) {
-  for (let i = 0; i < chars.length; i++) {
-    const char = chars[i];
-    
-    dialogue_addClass(char);
-
-    const level1 = document.querySelectorAll(".dialogue-container");
-
-    for (let i = 0; i < level1.length; i++) {
-      const element = level1[i];
-      element.id = "dialogue-container-" + i;
-    }
 
 
-    const targets = document.querySelectorAll(".who .index")
-    console.log(targets.length)
 
-    for (let i = 0; i < targets.length; i++) {
-      const target = targets[i];
-      target.innerHTML = i
-    }
-  }
-}

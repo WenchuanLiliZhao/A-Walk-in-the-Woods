@@ -29,6 +29,9 @@
     // Invoked on each page load after new HTML has been appended to the DOM
     hook.doneEach(function () {
       console.log("charSideBar loaded.")
+
+      myFunc("Antigone");
+      myFunc("Orpheus");
       // ...
     });
 
@@ -45,3 +48,19 @@
 })();
 
 
+function myFunc(who) {
+  const set = document.querySelectorAll("#main h4");
+
+  for (let i = 0; i < set.length; i++) {
+    const element = set[i];
+    if (element.innerText == who) {
+      element.onclick = function () {
+        console.log(`Open ${who}'s info`);
+
+        const infoBox = document.querySelector(`#char-side-info-${who}`);
+
+        infoBox.classList.add("open");
+      }
+    }
+  }
+}

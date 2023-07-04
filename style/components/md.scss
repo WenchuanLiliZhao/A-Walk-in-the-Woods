@@ -1,0 +1,156 @@
+// blockquote
+
+& {
+  padding: 16px;
+  position: relative;
+  display: grid;
+  gap: 8px;
+  
+
+  border-radius: 8px;
+
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: var(--color-bg-1-trans);
+  }
+}
+
+
+@mixin pStyle() {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@mixin smallStyle() {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-pencil-2);
+}
+
+
+h1 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: bold;
+
+  &::before {
+    content: "A Walk in the Woods";
+    display: block;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--color-pencil-2);
+    font-weight: normal;
+  }
+}
+
+img {
+  max-width: 480px;
+  border-radius: 8px;
+  margin: 8px 0;
+  transition: 0.8s;
+
+  &:hover {
+    max-width: 500px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: bold;
+}
+
+h4 {
+  @include pStyle();
+  font-weight: bold;
+
+  &[id*="antigone"], &[id*="orpheus"] {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      left: 16px;
+      border-radius: 1000px;
+      border: 1px solid rgba(white, 0.16);
+    }
+
+    &, & ~ * {
+      // color: red;
+      margin-left: 48px;
+    }
+  }
+
+  &[id*="antigone"] {
+    &::before {
+      background-image: url("https://play-lh.googleusercontent.com/TYXuv6xbVKH6OKllw_y5DSbBHwd7k_ImIJHRaiYifJUJ5rqBgPtSQ-VrbS-Ao1wr9w=w240-h480-rw");
+    }
+  }
+
+  &[id*="orpheus"] {
+    &::before {
+      background-image: url("https://www.institutfrancais.com/sites/default/files/medias/images/phallaina_marietta-ren_smallbang.jpg");
+    }
+  }
+}
+
+h6 {
+  @include pStyle();
+}
+
+p, li {
+  @include pStyle();
+}
+
+em {
+  border-bottom: 1px dashed var(--color-pencil-2);
+}
+
+strong {
+  color: var(--color-sig-pencil);
+}
+
+& > blockquote {
+  padding: 4px 0;
+  padding-left: 15px;
+  box-shadow: -1px 0 0 var(--color-pencil-2);
+}
+
+u {
+  font-size: 14px;
+  line-height: 22px;
+  padding: 4px 12px;
+  background-color: rgba(white, 0.08);
+  border: 1px solid rgba(white, 0.16);
+  border-radius: 1000px;
+}
+
+ul {
+  & > li {
+    list-style: disc;
+    margin-left: 24px;
+  }
+}
+
+ol {
+  & > li {
+    list-style: decimal;
+    margin-left: 24px;
+  }
+}
+
+p, li {
+  a {
+    text-decoration: underline;
+  }
+}
+
+hr {
+  display: none;
+}
+
+hr ~ p {
+  @include smallStyle();
+}
