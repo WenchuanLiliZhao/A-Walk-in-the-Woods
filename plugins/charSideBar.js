@@ -1,43 +1,13 @@
 (function () {
   var myPlugin = function (hook, vm) {
-    // Invoked one time when docsify script is initialized
-    hook.init(function () {
-      
-      // ...
-    });
-
-    // Invoked one time when the docsify instance has mounted on the DOM
-    hook.mounted(function () {
-      
-      // ...
-    });
-
-    // Invoked on each page load before new markdown is transformed to HTML.
-    // Supports asynchronous tasks (see beforeEach documentation for details).
-    hook.beforeEach(function (markdown) {
-      // ...
-      return markdown;
-    });
-
-    // Invoked on each page load after new markdown has been transformed to HTML.
-    // Supports asynchronous tasks (see afterEach documentation for details).
-    hook.afterEach(function (html) {
-      // ...
-      return html;
-    });
-
     // Invoked on each page load after new HTML has been appended to the DOM
     hook.doneEach(function () {
       console.log("charSideBar loaded.")
 
-      myFunc("Antigone");
-      myFunc("Orpheus");
-      // ...
-    });
+      openCharInfo("Antigone");
+      openCharInfo("Orpheus");
 
-    // Invoked one time after rendering the initial page
-    hook.ready(function () {
-      
+      closeCharInfo();
       // ...
     });
   };
@@ -48,19 +18,48 @@
 })();
 
 
-function myFunc(who) {
+function openCharInfo(who) {
   const set = document.querySelectorAll("#main h4");
 
   for (let i = 0; i < set.length; i++) {
     const element = set[i];
     if (element.innerText == who) {
-      element.onclick = function () {
+
+      element.classList.add("clickable");
+
+      element.onclick = function() {
         console.log(`Open ${who}'s info`);
 
         const infoBox = document.querySelector(`#char-side-info-${who}`);
 
-        infoBox.classList.add("open");
+        infoBox.classList.add("active"); // toggle
+
+        const closeBtn = document.querySelector(`#char-side-btn`);
+
+        closeBtn.classList.add("active"); // toggle
+
+        const body = document.querySelectorAll("body")[0];
+
+        body.classList.add("locked"); // toggle
       }
+    }
+  }
+}
+
+function closeCharInfo() {
+  const btn = document.querySelector("#char-side-btn");
+  const charInfoBox = document.querySelectorAll("[id*='char-side-info-']");
+
+  btn.onclick = function() {
+
+    btn.classList.remove("active");
+    const body = document.querySelectorAll("body")[0];
+
+    body.classList.remove("locked");
+
+    for (let i = 0; i < charInfoBox.length; i++) {
+      const box = charInfoBox[i];
+      box.classList.remove("active");
     }
   }
 }

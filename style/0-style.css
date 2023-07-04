@@ -219,8 +219,27 @@ main {
     line-height: 1.5;
     color: var(--color-pencil-2); }
 
+body.locked {
+  overflow: hidden; }
+
+#char-side-btn {
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.56);
+  transition: 0.3s;
+  pointer-events: none;
+  opacity: 0; }
+  #char-side-btn.active {
+    opacity: 1;
+    pointer-events: all; }
+
 [id*="char-side-info-"] {
   position: fixed;
+  z-index: 10000;
   width: 400px;
   height: 100vh;
   overflow-y: auto;
@@ -228,7 +247,13 @@ main {
   top: 0;
   padding: 64px 24px;
   background-color: var(--color-bg-0);
-  box-shadow: -1px 0 0 rgba(255, 255, 255, 0.16); }
+  box-shadow: -1px 0 0 rgba(255, 255, 255, 0.16);
+  transform: translate(150%, 0);
+  opacity: 0;
+  transition: 0.3s; }
+  [id*="char-side-info-"].active {
+    transform: translate(0, 0);
+    opacity: 1; }
   [id*="char-side-info-"] .avata {
     width: 120px;
     height: 120px; }
