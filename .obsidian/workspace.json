@@ -6,7 +6,6 @@
       {
         "id": "61bade285dd0d1b0",
         "type": "tabs",
-        "dimension": 26.03021978021978,
         "children": [
           {
             "id": "80fa0d5511032068",
@@ -14,37 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_sidebar.md",
+                "file": "doc/test.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ]
-      },
-      {
-        "id": "e0fec2ac107a6e26",
-        "type": "tabs",
-        "dimension": 73.96978021978022,
-        "children": [
-          {
-            "id": "c556367d82083fc1",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "4a6042a491500f19",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          }
-        ],
-        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_sidebar.md",
+                "file": "doc/test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_sidebar.md",
+                "file": "doc/test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_sidebar.md"
+                "file": "doc/test.md"
               }
             }
           }
@@ -174,6 +149,14 @@
   },
   "active": "80fa0d5511032068",
   "lastOpenFiles": [
+    "Untitled.canvas",
+    "doc/test.md",
+    "doc",
+    "Home.md",
+    "README.md",
+    "kkk.md",
+    "_sidebar.md",
+    "Untitled.md",
     "style/preset/reset.css",
     "style/preset/font.css",
     "style/components/0-components.css",
@@ -185,12 +168,8 @@
     "set-theory/test.md",
     "set-theory/Untitled.md",
     "set-theory/test.html",
-    "test.html",
-    "Untitled.md",
-    "style/components/md.scss",
     "set-theory/media/image-blog-draw-venn-diagram.jpg",
     "set-theory/from-naïve-to-modern/test.md",
-    "_sidebar.md",
     "set-theory/from-naïve-to-modern/Subsets.md",
     "set-theory/from-naïve-to-modern/Primitive Notions and Axioms.md",
     "set-theory/from-naïve-to-modern/Orderings and Ordered Sets.md",
@@ -207,10 +186,6 @@
     "Set Theory/From Naïve to Modern/Primitive Notions and Axioms.md",
     "Set Theory/From Naïve to Modern/Equivalence Relations and Quotient Sets.md",
     "Set Theory/From Naïve to Modern/How Many Elements Are There.md",
-    "Set Theory/From Naïve to Modern/Functions.md",
-    "Set Theory/Ordinal Numbers/_Chapter Into.md",
-    "Set Theory/_Part Intro.md",
-    "Home.md",
     "media/Subsets.jpg",
     "Pasted image 20230619183127.png",
     "Pasted image 20230619183138.png",
